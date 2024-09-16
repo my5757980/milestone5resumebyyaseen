@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique path and shareable link</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unique path and shareable link</h1>
+        <form id="resumeform">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+
+                <p>
+                    First name
+                    <input type="text" id="firstName" name="firstName" size="15" maxlength="30">
+                    Last name
+                    <input type="text" id="lastName" name="lastName" size="15" maxlength="30">
+                </p>
+                <p>
+                    Enter your e-mail address
+                    <input type="email" id="email" name="email" size="15" maxlength="30">
+                </p>
+                <p>
+                    Phone
+                    <input type="tel" id="phone" name="phone" size="15" maxlength="30"> 
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <textarea id="education" name="education" rows="10" cols="50">Enter your text.....</textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Experience</legend>
+                <textarea id="experience" name="experience" rows="10" cols="50">Enter your text.....</textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <textarea id="skills" name="skills" rows="10" cols="50">Enter your text.....</textarea>
+            </fieldset>
+            <p>
+                <button type="button" onclick="generateResume()">Generate resume below</button>
+            </p>
+        </form>
+        <section id="resumeOutput" class="hidden">
+            <h2>Generated Resume</h2>
+            <div id="resumeContent"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
